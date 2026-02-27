@@ -1,20 +1,27 @@
 {
-  "name": "tiktok-bot-instance",
+  "name": "tiktok-incremental-bot",
   "version": "1.0.0",
-  "description": "TikTok View Bot Instance - Sends real TikTok views",
-  "main": "server.js",
+  "description": "TikTok incremental bot with real view checking and adaptive request system",
+  "main": "index.js",
+  "type": "commonjs",
   "scripts": {
-    "start": "node server.js"
-  },
-  "dependencies": {
-    "express": "^4.18.0"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "keywords": [
     "tiktok",
     "bot",
+    "express",
     "views",
     "automation"
   ],
-  "author": "NAIMUL HACKER KING",
-  "license": "MIT"
+  "author": "Rahmttollah",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.7",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
 }
